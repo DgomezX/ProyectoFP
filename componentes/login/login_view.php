@@ -15,8 +15,13 @@
     </article>
     <article>
         <div class="text-content">
-            <h2>In front of Versailles</h2>
-            <p>The Palace of Versailles is pretty amazing, not just inside, but also the outside garden, where you'll find gardens like these sporting amazing ranges of flora.</p>
+            <h2>Ventajas de formar parte de Dreamdiet</h2>
+            <ol>
+                <li>Conocer tus requisitos alimenticios.</li>
+                <li>Aprender a alimentarte de manera más saludable.</li>
+                <li>Conocer mejor las propiedades que te aporta cada alimento.</li>
+                <li>Mejorar tu alimentación y tu salud.</li>
+            </ol>
         </div>
         <div class="image-content"><img src="img/slider/slidr3.jpg" alt="imgslider3"></div>
     </article>

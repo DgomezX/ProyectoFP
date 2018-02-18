@@ -1,7 +1,9 @@
 <?php include 'componentes/commons/menu_nav.php'; 	// menu?>
-<div id="perfil_contenido">
-    <h1>Perfil de <?php echo $_SESSION['usuario']['nick']?></h1>
+<div id="info-user">
+    <h1><?php echo $_SESSION['usuario']['nick']?></h1>
     <a class="btn_close_sess" href="index.php?option=cierra_sesion">Cerrar Sesion de usuario</a>
+</div>
+<div id="perfil_contenido">
     <div id="datos_usuario">
         <h3>Tus Datos:</h3>
         <p>Pulsa el boton para ver tus datos</p>
