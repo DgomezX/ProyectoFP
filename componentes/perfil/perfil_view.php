@@ -1,7 +1,7 @@
 <?php include 'componentes/commons/menu_nav.php'; 	// menu?>
 <div id="info-user">
     <h1><?php echo $_SESSION['usuario']['nick']?></h1>
-    <a class="btn_close_sess" href="index.php?option=cierra_sesion">Cerrar Sesion de usuario</a>
+    <a class="btn_close_sess" href="index.php?option=cierra_sesion"><i class="fas fa-power-off"></i>Cerrar Sesion</a>
 </div>
 <div id="perfil_contenido">
     <div id="datos_usuario">

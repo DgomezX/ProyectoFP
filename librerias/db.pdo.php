@@ -24,7 +24,7 @@ class database {
     private $dbhost = 'localhost';
     private $dbuser = 'danielgomez';
     private $dbpass = 'dg_8365';
-    private $dbname = '2017p_dgomez';
+    private $dbname = '2017p_danielgomez';
     
     //constructor que realiza la conexion a la bbdd
     public function __construct() {
