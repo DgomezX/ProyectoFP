@@ -1,4 +1,13 @@
-<?php include 'componentes/commons/menu_nav.php'; 	// menu?>
+<!doctype html>
+<html lang="en">
+<head>
+    <?php include 'componentes/commons/head.php'; 	// head ?>
+</head>
+<body>
+
+</body>
+</html>
+<!--?php include 'componentes/commons/menu_nav.php'; 	// menu?>
 <div id="info-user">
     <h1><?php echo $_SESSION['usuario']['nick']?></h1>
     <a class="btn_close_sess" href="index.php?option=cierra_sesion"><i class="fas fa-power-off"></i>Cerrar Sesion</a>
@@ -29,4 +38,4 @@
             </div>
         </form>
     </div>
-</div>
+</div-->
