@@ -19,13 +19,58 @@
     font-weight: bold;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Fibre';
+    src: url('../fonts/Fibre/FibreVintage.eot');
+    src: url('../fonts/Fibre/FibreVintage.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Fibre/FibreVintage.woff') format('woff'),
+    url('../fonts/Fibre/FibreVintage.ttf') format('truetype'),
+    url('../fonts/Fibre/FibreVintage.svg#Fibre') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* COMUNES */
 *{border:0;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;margin:0;padding:0;}
 body{width: 100%; height: 100%; font-family: "Roboto-Regular",sans-serif;}
+.button{border-radius: 15px; padding: 20px 50px; display: inline-block; text-decoration: none;}
+.logo img, .logo p{display: inline;}
+.logo img{width: 80px; opacity: 1;}
+.logo p{font-family: "Fibre",sans-serif; color: #ffffff; font-size: 50px; padding-bottom: 10px;}
+.visible{display: block !important;}
 
 /* LOGIN */
 #login{background: url("../img/login/login-bg-min.jpeg") no-repeat center; background-size: cover;}
+#login header{background-color: #000000; opacity: 0.8; max-height: 110px;}
+#login #content-login{width: 60%; text-align: center;}
+#login h1{color: #ffffff; font-family: "Fibre", sans-serif; font-size: 200px;}
+#login h2{color: #ffffff; font-family: "Roboto-Black", sans-serif; font-size: 40px; padding-left: 50px; padding-right: 50px;}
+#login .button{margin-top: 10px; background-color: transparent;color: #ffffff; font-family: "Roboto-Black", sans-serif; border: 1px solid #ffffff; transition: all 1s ease; opacity: 1;}
+#login .button:hover{cursor: pointer; background-color: #03C04A; border:0;}
+.botones-login li{display: inline;}
+#show-login{background-color: transparent;}
+#show-login:hover{cursor: pointer;}
+#show-singin{background-color: transparent;}
+#show-singin:hover{cursor: pointer; }
+#login .cajaform{width: 40%; min-height: 300px; border-radius: 20px; margin-left: auto; margin-right: auto; padding: 15px;background-color: #ffffff; background-image:linear-gradient(120deg, rgba(132, 250, 176, 0.7) 0%, rgba(143, 211, 244, 0.7)100%), url('../img/login/form-bg-min.jpg'); background-position: center; background-size: cover;}/*background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%)*/
+#login .cajaform h3{font-family: "Roboto-Black", sans-serif; font-size: 30px; color: #ffffff;}
+#login .cajaform p{margin-top: 15px;margin-bottom: 15px; color: #ffffff;}
+#login-container{text-align: center; margin-top: 15px; display: none;}
+#login .cajaform input{width: 80%; height: 40px; margin-bottom: 10px; padding: 10px; border-radius: 5px; background-color: rgba(255, 255, 255, 0.8)}
+#login .cajaform .login-submit{margin-top: 10px; background-color: transparent;color: #ffffff; font-family: "Roboto-Black", sans-serif; border: 1px solid #ffffff; transition: all 1s ease; opacity: 1; text-transform: uppercase;}
+#login .cajaform .login-submit:hover{cursor: pointer; background-color: #03C04A; border:0;}
+#login .error p{width: 60%; margin: 10px auto;padding: 30px; font-size: 25px; color: #ffffff; background-color: #ff5252; border-radius: 5px; text-align: center;}
+#singin-container{text-align: center; margin-top: 15px; display: none;}
+
+
+/**/
 /* GRID */
 .container{width:1200px;padding:0 0 10px 0}
+.contenedor > h1 {text-align:center;font-weight:normal;padding:20px 0;font-size:1.5em}
+.contenedor > p {clear:both;text-align:center;font-weight:normal;padding:20px 0;font-size:1.1em}
+.contenedor > div {padding:10px; float:left;display:inline;border:1px solid #fff;background:#ddd;text-align:center;font-size:0.70em}
+.contenedor > div:hover{background:#ccc}
 
 .col-1 {width:8.33%}
 .col-2 {width:16.66%}

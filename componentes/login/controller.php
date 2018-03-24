@@ -1,5 +1,6 @@
 <?php
 include 'componentes/login/model.php';
+$title = 'DreamDiet | Mejora tu alimentación';
 $location = 'login';
 $errorReg = '';
 $errorLog = '';
