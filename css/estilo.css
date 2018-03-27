@@ -40,13 +40,22 @@ body{width: 100%; height: 100%; font-family: "Roboto-Regular",sans-serif;}
 .logo p{font-family: "Fibre",sans-serif; color: #ffffff; font-size: 50px; padding-bottom: 10px;}
 .visible{display: block !important;}
 
+/* VENTANA MODAL */
+.modal {display: none; position: fixed; z-index: 1;left: 0;top: 0;width: 100%;height: 100%;overflow: auto;background-color: rgb(0,0,0);background-color: rgba(0,0,0,0.8);}
+.modal-content {background-color: #fefefe; margin: 15% auto;padding: 20px;border: 1px solid #888;width: 60%;}
+.modal-header {padding: 2px 16px; text-align: center;}
+.modal-header h2{color: #03C04A !important;}
+.close {color: #aaa;float: right;font-size: 28px;font-weight: bold; margin-top: -40px;}
+.close:hover, .close:focus {color: #ff5252;text-decoration: none;cursor: pointer;}
+.modal-body p{text-align: center;}
+
 /* LOGIN */
 #login{background: url("../img/login/login-bg-min.jpeg") no-repeat center; background-size: cover;}
 #login header{background-color: #000000; opacity: 0.8; max-height: 110px;}
 #login #content-login{width: 60%; text-align: center;}
 #login h1{color: #ffffff; font-family: "Fibre", sans-serif; font-size: 200px;}
 #login h2{color: #ffffff; font-family: "Roboto-Black", sans-serif; font-size: 40px; padding-left: 50px; padding-right: 50px;}
-#login .button{margin-top: 10px; background-color: transparent;color: #ffffff; font-family: "Roboto-Black", sans-serif; border: 1px solid #ffffff; transition: all 1s ease; opacity: 1;}
+#login .button{margin-top: 10px; background-color: transparent;color: #ffffff; font-family: "Roboto-Black", sans-serif; font-size: 18px; border: 1px solid #ffffff; transition: all 1s ease; opacity: 1;}
 #login .button:hover{cursor: pointer; background-color: #03C04A; border:0;}
 .botones-login li{display: inline;}
 #show-login{background-color: transparent;}
@@ -63,8 +72,14 @@ body{width: 100%; height: 100%; font-family: "Roboto-Regular",sans-serif;}
 #login .error p{width: 60%; margin: 10px auto;padding: 30px; font-size: 25px; color: #ffffff; background-color: #ff5252; border-radius: 5px; text-align: center;}
 #singin-container{text-align: center; margin-top: 15px; display: none;}
 
+/* Formulario de contacto*/
+#ventanaContacto .cajaform{width: 100%; background-image: none; }
+#ventanaContacto .cajaform input{border: 1px solid grey; width: 100%;}
+#ventanaContacto .cajaform textarea{border: 1px solid grey; width: 100%; margin-bottom: 10px; padding: 10px; border-radius: 5px;}
+#ventanaContacto .cajaform .enviar{margin-right: 5px;}
+#ventanaContacto .cajaform .enviar:hover{cursor: pointer; background-color: #03C04A; color: #ffffff; border:0; transition: all 1s ease; opacity: 1;}
+#ventanaContacto .cajaform .limpiar:hover{cursor: pointer; background-color: grey; color: #ffffff; border:0; transition: all 1s ease; opacity: 1;}
 
-/**/
 /* GRID */
 .container{width:1200px;padding:0 0 10px 0}
 .contenedor > h1 {text-align:center;font-weight:normal;padding:20px 0;font-size:1.5em}
@@ -72,18 +87,18 @@ body{width: 100%; height: 100%; font-family: "Roboto-Regular",sans-serif;}
 .contenedor > div {padding:10px; float:left;display:inline;border:1px solid #fff;background:#ddd;text-align:center;font-size:0.70em}
 .contenedor > div:hover{background:#ccc}
 
-.col-1 {width:8.33%}
-.col-2 {width:16.66%}
-.col-3 {width:25%}
-.col-4 {width:33.33%}
-.col-5 {width:41.66%}
-.col-6 {width:50%}
-.col-7 {width:58.33%}
-.col-8 {width:66.66%}
-.col-9 {width:75%}
-.col-10 {width:83.33%}
-.col-11 {width:91.66%}
-.col-12 {width:100%}
+.col-1 {width:8.33% !important;}
+.col-2 {width:16.66% !important;}
+.col-3 {width:25% !important;}
+.col-4 {width:33.33% !important;}
+.col-5 {width:41.66% !important;}
+.col-6 {width:50% !important;}
+.col-7 {width:58.33% !important;}
+.col-8 {width:66.66% !important;}
+.col-9 {width:75% !important;}
+.col-10 {width:83.33% !important;}
+.col-11 {width:91.66% !important;}
+.col-12 {width:100% !important;}
 [class*="col-"] {float: left;padding: 15px;}
 .row:after{content: "";clear: both;display: block;}
 

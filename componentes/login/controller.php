@@ -22,6 +22,7 @@ if (isset($_POST['crear'])){
         }
     }
 }
+
 if (isset($_POST['entrar'])){
     $user = $_POST['nombre'];
     $pass = $_POST['pass'];
@@ -33,4 +34,5 @@ if (isset($_POST['entrar'])){
     }
 
 }
+
 include 'componentes/login/login_view.php';
