@@ -34,3 +34,30 @@ function cerrarModal(id)
 }
 
 //Formulario de contacto por Ajax
+
+$(document).ready(function(){
+    $('#form-contacto').submit(function(event){
+
+        event.preventDefault();
+
+        $.ajax({
+            type: 'POST',
+            url: $(this).attr('action'),
+            data: $(this).serialize(),
+            success: function(data){
+                $('#respuesta-contact').html(data);
+                $('#msj-cont').hide();
+                $('#formContact').hide();
+                $('#volver-contact').show();
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+                alert(xhr.status);
+            }
+        });
+    });
+    $('#re-contact').click(function () {
+        $('#msj-cont').show();
+        $('#formContact').show();
+        $('#volver-contact').hide();
+    });
+});

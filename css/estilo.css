@@ -52,6 +52,8 @@ body{width: 100%; height: 100%; font-family: "Roboto-Regular",sans-serif;}
 /* LOGIN */
 #login{background: url("../img/login/login-bg-min.jpeg") no-repeat center; background-size: cover;}
 #login header{background-color: #000000; opacity: 0.8; max-height: 110px;}
+#login header .info-login{float: right;}
+#login header .info-login button{float: right;}
 #login #content-login{width: 60%; text-align: center;}
 #login h1{color: #ffffff; font-family: "Fibre", sans-serif; font-size: 200px;}
 #login h2{color: #ffffff; font-family: "Roboto-Black", sans-serif; font-size: 40px; padding-left: 50px; padding-right: 50px;}
@@ -79,6 +81,10 @@ body{width: 100%; height: 100%; font-family: "Roboto-Regular",sans-serif;}
 #ventanaContacto .cajaform .enviar{margin-right: 5px;}
 #ventanaContacto .cajaform .enviar:hover{cursor: pointer; background-color: #03C04A; color: #ffffff; border:0; transition: all 1s ease; opacity: 1;}
 #ventanaContacto .cajaform .limpiar:hover{cursor: pointer; background-color: grey; color: #ffffff; border:0; transition: all 1s ease; opacity: 1;}
+#ventanaContacto #volver-contact{display: none; text-align: center;}
+#ventanaContacto #volver-contact #re-contact{display: block; margin-left: auto; margin-right: auto; border: 1px solid gray; color: gray;}
+#ventanaContacto #volver-contact #re-contact:hover{color: #ffffff; border: none;}
+/* HEADER */
 
 /* GRID */
 .container{width:1200px;padding:0 0 10px 0}
@@ -210,6 +216,7 @@ body{width: 100%; height: 100%; font-family: "Roboto-Regular",sans-serif;}
 
 @media (min-width: 320px) and (max-width: 480px) {
     .container{width:320px;margin:0 auto;}
-    div[class*='col-'] {width:100%}
+    div[class*='col-'] {width:100% !important;}
+    .hidden-xs{display:none;}
 
 }

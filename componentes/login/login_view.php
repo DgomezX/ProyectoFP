@@ -10,10 +10,7 @@
                     <img src="/img/commons/logo.png" alt="logo" class="logo"><p>Dreamdiet</p>
                 </div>
             </div>
-            <div class="col-4">
-
-            </div>
-            <div class="col-4">
+            <div class="col-4 info-login">
                 <button type="button" id="btnContacto" class="button" onclick="mostrarModal('ventanaContacto')">+ info <i class="fas fa-info-circle"></i></button>
             </div>
         </div>
