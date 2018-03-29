@@ -51,7 +51,7 @@ body{width: 100%; height: 100%; font-family: "Roboto-Regular",sans-serif;}
 
 /* LOGIN */
 #login{background: url("../img/login/login-bg-min.jpeg") no-repeat center; background-size: cover;}
-#login header{background-color: #000000; opacity: 0.8; max-height: 110px;}
+#login header{background-color: #000000; opacity: 0.8;}
 #login header .info-login{float: right;}
 #login header .info-login button{float: right;}
 #login #content-login{width: 60%; text-align: center;}
@@ -167,6 +167,8 @@ body{width: 100%; height: 100%; font-family: "Roboto-Regular",sans-serif;}
     .col-l-10 {width:83.33%}
     .col-l-11 {width:91.66%}
     .col-l-12 {width:100%}
+    #login h1{font-size: 70px; text-align: center;}
+    #login h2{font-size: 25px; text-align: center;}
 }
 
 /*
@@ -186,6 +188,8 @@ body{width: 100%; height: 100%; font-family: "Roboto-Regular",sans-serif;}
     .col-md-10 {width:83.33%}
     .col-md-11 {width:91.66%}
     .col-md-12 {width:100%}
+    #login h1{font-size: 70px; text-align: center;}
+    #login h2{font-size: 25px; text-align: center;}
 
 }
 
@@ -207,6 +211,8 @@ body{width: 100%; height: 100%; font-family: "Roboto-Regular",sans-serif;}
     .col-sm-10 {width:83.33%}
     .col-sm-11 {width:91.66%}
     .col-sm-12 {width:100%}
+    #login h1{font-size: 70px; text-align: center;}
+    #login h2{font-size: 25px; text-align: center;}
 
 }
 
@@ -218,5 +224,15 @@ body{width: 100%; height: 100%; font-family: "Roboto-Regular",sans-serif;}
     .container{width:320px;margin:0 auto;}
     div[class*='col-'] {width:100% !important;}
     .hidden-xs{display:none;}
+    .logo-container{text-align: center;}
+    .logo img{width: 60px;}
+    .logo p{font-size: 40px;}
+    .button{width: 90%;}
+    .modal-content{width: 100%;}
+    #login header .info-login button{display: block; margin-left: auto; margin-right: auto; float: none; padding: 10px 20px; margin-top: -10px;}
+    #login #content-login{width: 100%;}
+    #login h1{font-size: 70px; text-align: center;}
+    #login h2{font-size: 25px; text-align: center;}
+    #login .cajaform{width: 100%;}
 
 }

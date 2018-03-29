@@ -11,7 +11,7 @@
                 </div>
             </div>
             <div class="col-4 info-login">
-                <button type="button" id="btnContacto" class="button" onclick="mostrarModal('ventanaContacto')">+ info <i class="fas fa-info-circle"></i></button>
+                <button type="button" id="btnContacto" class="button" onclick="mostrarModal('ventanaContacto')">Contacto <i class="fas fa-info-circle"></i></button>
             </div>
         </div>
     </header>
