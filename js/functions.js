@@ -33,9 +33,10 @@ function cerrarModal(id)
     modal.style.display = "none";
 }
 
-//Formulario de contacto por Ajax
+
 
 $(document).ready(function(){
+    //Formulario de contacto por Ajax
     $('#form-contacto').submit(function(event){
 
         event.preventDefault();
@@ -60,4 +61,5 @@ $(document).ready(function(){
         $('#formContact').show();
         $('#volver-contact').hide();
     });
+
 });

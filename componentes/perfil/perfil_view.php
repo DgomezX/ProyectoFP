@@ -4,7 +4,7 @@
     <?php include 'componentes/commons/head.php'; 	// head ?>
 </head>
 <body>
-
+    <?php include 'componentes/commons/header.php'; 	// header ?>
 </body>
 </html>
 <!--?php include 'componentes/commons/menu_nav.php'; 	// menu?>
