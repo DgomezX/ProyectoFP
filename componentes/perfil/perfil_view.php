@@ -5,6 +5,7 @@
 </head>
 <body>
     <?php include 'componentes/commons/header.php'; 	// header ?>
+    <?php include 'componentes/commons/menu_nav.php'; 	// menu navegacion ?>
 </body>
 </html>
 <!--?php include 'componentes/commons/menu_nav.php'; 	// menu?>

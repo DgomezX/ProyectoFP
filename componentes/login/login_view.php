@@ -5,12 +5,12 @@
 <body id="<?php echo $location; ?>">
     <header>
         <div class="row">
-            <div class="logo-container col-4">
+            <div class="logo-container col-xs-12 col-4">
                 <div class="logo">
                     <img src="/img/commons/logo.png" alt="logo" class="logo"><p>Dreamdiet</p>
                 </div>
             </div>
-            <div class="col-4 info-login">
+            <div class="col-xs-12 col-4 info-login">
                 <button type="button" id="btnContacto" class="button" onclick="mostrarModal('ventanaContacto')">Contacto <i class="fas fa-info-circle"></i></button>
             </div>
         </div>

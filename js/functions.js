@@ -62,4 +62,15 @@ $(document).ready(function(){
         $('#volver-contact').hide();
     });
 
+    //Mostrar menu navegacion
+    $('#nav-button').click(function () {
+        $('#navMenu').fadeIn(500);
+    })
+
+    $('#cerrar-nav-button').click(function () {
+        $('#navMenu').fadeOut(500);
+    })
+
 });
+
+
