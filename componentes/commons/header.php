@@ -9,7 +9,7 @@
             <button id="nav-button" class="button"><i class="fas fa-th"></i><span class="hidden-xs">Menú</span></button>
         </div>
         <div class="col-xs-2 col-4">
-            <a id="logout" class="button"><i class="fas fa-power-off visible-xs"></i><span class=" hidden-xs">Cerrar Session</span></a>
+            <a href="/componentes/commons/logout.php" id="logout" class="button"><i class="fas fa-power-off visible-xs"></i><span class=" hidden-xs">Cerrar Session</span></a>
         </div>
 	</div>
 </header>

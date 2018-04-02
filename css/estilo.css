@@ -45,28 +45,48 @@ body{width: 100%; height: 100%; font-family: "Roboto-Regular",sans-serif;}
 .modal {display: none; position: fixed; z-index: 1;left: 0;top: 0;width: 100%;height: 100%;overflow: auto;background-color: rgb(0,0,0);background-color: rgba(0,0,0,0.8);}
 .modal-content {background-color: #fefefe; margin: 15% auto;padding: 20px;border: 1px solid #888;width: 60%;}
 .modal-header {padding: 2px 16px; text-align: center;}
-.modal-header h2{color: #03C04A !important;}
+.modal-header h2{color: #1EB250 !important;}
 .close {color: #aaa;float: right;font-size: 28px;font-weight: bold; margin-top: -40px;}
 .close:hover, .close:focus {color: #ff5252;text-decoration: none;cursor: pointer;}
 .modal-body p{text-align: center;}
 
 /* HEADER */
-header{background-color: #000000;}
+header{background-color: #000000; width: 100%;}
 header #nav-button{display: block; margin: 20px auto 0 auto; background: none; border: none; color: #ffffff; font-size: 25px; font-family: "Roboto-Black", sans-serif; transition: all 0.8s ease;}
 header #nav-button i{margin-right: 5px;}
 header #nav-button:hover{transform:scale(1.25); cursor: pointer;}
 header #logout{display: block; float: right; background: none; border: none; color: #ffffff; font-size: 25px;overflow:hidden;}
 header #logout:hover{cursor: pointer;}
 
+/* FOOTER */
+footer{background-color: #000000; width: 100%; color: #ffffff;}
+footer ul{list-style: none;}
+footer .logo{margin-bottom: 10px;}
+footer .share-footer{text-align: center;}
+footer #redes-footer li{display: inline-block; margin-right: 15px; margin-left: 15px;}
+footer #redes-footer li a{display: block; width: 60px; height: 55px;}
+footer #redes-footer li .facebook{  background-image: url("/img/commons/face-nocolor.png"); background-size: cover; background-repeat: no-repeat;}
+footer #redes-footer li .facebook:hover{  background-image: url("/img/commons/face-color.png"); background-size: cover; background-repeat: no-repeat;}
+footer #redes-footer li .twitter{ background-image: url("/img/commons/twit-nocolor.png"); background-size: cover; background-repeat: no-repeat;}
+footer #redes-footer li .twitter:hover{ background-image: url("/img/commons/twit-color.png"); background-size: cover; background-repeat: no-repeat;}
+footer #redes-footer li .instagram{ background-image: url("/img/commons/insta-nocolor.png"); background-size: cover; background-repeat: no-repeat;}
+footer #redes-footer li .instagram:hover{ background-image: url("/img/commons/insta-color.png"); background-size: cover; background-repeat: no-repeat;}
+footer .more-info-footer{text-align: center; }
+footer .more-info-footer a{color: #ffffff; text-decoration: none;}
+footer .more-info-footer a:hover{opacity: 0.6; color: #1EB250;}
+footer #aviso-legal{text-align: center; background-color: #757575; color: #ffffff; font-style: italic;}
+footer #aviso-legal a{color: #ffffff; text-decoration: none; font-style: italic;}
+footer #aviso-legal a:hover{opacity: 0.6; color: #1EB250;}
 /* MENU NAV */
 #navMenu{display: none; text-align: center; background-color: #000000; position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden;}
 #navMenu #cerrar-nav-button{ font-size: 20px; transition: all 0.6s ease}
 #navMenu #cerrar-nav-button:hover{cursor: pointer; opacity: 0.7;}
 #navMenu #cerrar-nav-button i{margin-right: 5px;}
 #navMenu .container-nav{padding-top: 100px; padding-bottom: 100px;}
+#navMenu .container-nav #enlaces-menu{list-style: none;}
 #navMenu .container-nav #enlaces-menu li{margin-top: 30px;}
 #navMenu .container-nav #enlaces-menu li a{font-family: "Roboto-Black", sans-serif; font-size: 40px; color: #ffffff; text-decoration: none;}
-#navMenu .container-nav #redes-menu{margin-top: 50px;}
+#navMenu .container-nav #redes-menu{margin-top: 50px; list-style: none;}
 #navMenu .container-nav #redes-menu li{display: inline-block; margin-right: 15px; margin-left: 15px;}
 #navMenu .container-nav #redes-menu li a{display: block; width: 60px; height: 55px;}
 #navMenu .container-nav #redes-menu li .facebook{  background-image: url("/img/commons/face-nocolor.png"); background-size: cover; background-repeat: no-repeat;}
@@ -84,7 +104,7 @@ header #logout:hover{cursor: pointer;}
 #login h1{color: #ffffff; font-family: "Fibre", sans-serif; font-size: 200px;}
 #login h2{color: #ffffff; font-family: "Roboto-Black", sans-serif; font-size: 40px; padding-left: 50px; padding-right: 50px;}
 #login .button{margin-top: 10px; background-color: transparent;color: #ffffff; font-family: "Roboto-Black", sans-serif; font-size: 18px; border: 1px solid #ffffff; transition: all 1s ease; opacity: 1;}
-#login .button:hover{cursor: pointer; background-color: #03C04A; border:0;}
+#login .button:hover{cursor: pointer; background-color: #1EB250; border:0;}
 .botones-login li{display: inline;}
 #show-login{background-color: transparent;}
 #show-login:hover{cursor: pointer;}
@@ -96,16 +116,16 @@ header #logout:hover{cursor: pointer;}
 #login-container{text-align: center; margin-top: 15px; display: none;}
 #login .cajaform input{width: 80%; height: 40px; margin-bottom: 10px; padding: 10px; border-radius: 5px; background-color: rgba(255, 255, 255, 0.8)}
 #login .cajaform .login-submit{margin-top: 10px; background-color: transparent;color: #ffffff; font-family: "Roboto-Black", sans-serif; border: 1px solid #ffffff; transition: all 1s ease; opacity: 1; text-transform: uppercase;}
-#login .cajaform .login-submit:hover{cursor: pointer; background-color: #03C04A; border:0;}
+#login .cajaform .login-submit:hover{cursor: pointer; background-color: #1EB250; border:0;}
 #login .error p{width: 60%; margin: 10px auto;padding: 30px; font-size: 25px; color: #ffffff; background-color: #ff5252; border-radius: 5px; text-align: center;}
 #singin-container{text-align: center; margin-top: 15px; display: none;}
 
 /* Formulario de contacto*/
 #ventanaContacto .cajaform{width: 100%; background-image: none; }
-#ventanaContacto .cajaform input{border: 1px solid grey; width: 100%;}
+#ventanaContacto .cajaform input{width: 100%; height: 40px; margin-bottom: 10px; padding: 10px; border-radius: 5px; border: 1px solid grey; background-color: rgba(255, 255, 255, 0.8)}
 #ventanaContacto .cajaform textarea{border: 1px solid grey; width: 100%; margin-bottom: 10px; padding: 10px; border-radius: 5px;}
 #ventanaContacto .cajaform .enviar{margin-right: 5px;}
-#ventanaContacto .cajaform .enviar:hover{cursor: pointer; background-color: #03C04A; color: #ffffff; border:0; transition: all 1s ease; opacity: 1;}
+#ventanaContacto .cajaform .enviar:hover{cursor: pointer; background-color: #1EB250; color: #ffffff; border:0; transition: all 1s ease; opacity: 1;}
 #ventanaContacto .cajaform .limpiar:hover{cursor: pointer; background-color: grey; color: #ffffff; border:0; transition: all 1s ease; opacity: 1;}
 #ventanaContacto #volver-contact{display: none; text-align: center;}
 #ventanaContacto #volver-contact #re-contact{display: block; margin-left: auto; margin-right: auto; border: 1px solid gray; color: gray;}

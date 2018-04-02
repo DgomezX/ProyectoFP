@@ -1,23 +1,28 @@
 <footer>
-    <div class="logofoot">
-        <img src="../img/salad-min.png" alt="page logo" class="logo">
-        <h1 class="maintitle">Dream<span class="tit">Diet</span></h1>
-    </div>
-    <div class="social">
-        <p>Encuentranos en tus redes sociales:(Proximamente)</p>
-        <a href="#" class="facebook"></a>
-        <a href="#" class="insta"></a>
-        <a href="#" class="twitter"></a>
-    </div><!--/social-->
-    <div class="legal">
-        <a href="#" class="contact" onclick="mostrarContacto()">Abrir ventana de contacto</a>
-    </div><!--/legal-->
-    <div id="ventanaContacto">
-        <div id="contacCont">
-            <span class="close" onclick="ocultarContacto()">&times;</span>
-            <h1>¿Quiere contactar con nosotros?</h1>
-            <p>Si tiene alguna duda o quiere información extra sobre la web contacte con nosotros en el correo dreamdietcontact@gmail.com y estaremos encantados de atenderle</p>
-            <a href="mailto:dreamdietcontact@gmail.com">Pulse aquí para contactar con nosotros</a>
+    <div class="row">
+        <div class="logo-container col-xs-12 col-4">
+            <div class="logo">
+                <p>Dreamdiet</p>
+            </div>
+            <p>Alimentate bien, Vive mejor.</p>
+        </div>
+        <div class="share-footer col-xs-12 col-4">
+            <ul id="redes-footer">
+                <li><a href="https://www.facebook.com/" class="facebook" target="_blank"></a></li>
+                <li><a href="https://twitter.com/" class="twitter" target="_blank"></a></li>
+                <li><a href="https://www.instagram.com" class="instagram" target="_blank"></a></li>
+            </ul>
+        </div>
+        <div class="more-info-footer col-xs-12 col-4">
+            <ul>
+                <li><a href="" id="contact-footer" onclick="mostrarModal('ventanaContacto'); return false;">Contacta con nosotros</a></li>
+            </ul>
         </div>
     </div>
-</footer> 
+    <div class="row">
+        <div id="aviso-legal" class="col-12">
+            <p>© 2018 DreamDiet | <a href="">Aviso Legal</a></p>
+        </div>
+    </div>
+    <?php include 'componentes/formularioContacto/form_contact.php'; 	// ventana modal contacto?>
+</footer>

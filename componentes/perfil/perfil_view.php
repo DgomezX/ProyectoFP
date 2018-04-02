@@ -6,6 +6,8 @@
 <body>
     <?php include 'componentes/commons/header.php'; 	// header ?>
     <?php include 'componentes/commons/menu_nav.php'; 	// menu navegacion ?>
+
+    <?php include 'componentes/commons/footer.php'; 	// footer ?>
 </body>
 </html>
 <!--?php include 'componentes/commons/menu_nav.php'; 	// menu?>
