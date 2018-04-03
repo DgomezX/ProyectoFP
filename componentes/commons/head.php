@@ -4,7 +4,6 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <!-- Cargar JS -->
 <script type="text/javascript" src="js/functions.js"></script>
-<script src="js/slippry.min.js"></script>
 <!-- FontAwesome -->
 <link href="/css/fontawesome/css/fontawesome-all.css" rel="stylesheet">
 <!-- Cargar estilos -->

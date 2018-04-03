@@ -3,9 +3,17 @@
 <head>
     <?php include 'componentes/commons/head.php'; 	// head ?>
 </head>
-<body>
+<body id="<?php echo $location; ?>">
     <?php include 'componentes/commons/header.php'; 	// header ?>
     <?php include 'componentes/commons/menu_nav.php'; 	// menu navegacion ?>
+    <section>
+        <div class="row profile-banner">
+            <div class="col-xs-12 col-4 profile-img">
+                <img src="<?= $ruta_foto?>" alt="imagen perfil">
+                <h1><?php echo $_SESSION['usuario']['nick']?></h1>
+            </div>
+        </div>
+    </section>
 
     <?php include 'componentes/commons/footer.php'; 	// footer ?>
 </body>
