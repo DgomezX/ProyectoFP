@@ -40,6 +40,7 @@ body{width: 100%; height: 100%; font-family: "Roboto-Regular",sans-serif;}
 .logo p{font-family: "Fibre",sans-serif; color: #ffffff; font-size: 50px; padding-bottom: 10px;}
 .visible{display: block !important;}
 .visible-xs{display: none;}
+.limpiar{clear: both;}
 
 /* VENTANA MODAL */
 .modal {display: none; position: fixed; z-index: 1;left: 0;top: 0;width: 100%;height: 100%;overflow: auto;background-color: rgb(0,0,0);background-color: rgba(0,0,0,0.8);}
@@ -127,7 +128,20 @@ footer #aviso-legal a:hover{opacity: 0.6; color: #1EB250;}
 #profile .profile-banner .profile-img{margin-top: 50px;}
 #profile .profile-banner .profile-img img{display: inline-block; width: 96px; height: auto;}
 #profile .profile-banner .profile-img h1{display: inline; font-family: "Roboto-Black", sans-serif; font-size: 50px;}
-
+#profile .datos-usuario{margin-top: 15px; margin-bottom: 15px;}
+#profile .datos-usuario h2{font-family: "Roboto-Black", sans-serif; font-size: 30px; color: #1EB250; text-align: center;}
+#profile .datos-usuario .listado-datos ul{list-style-image: url("/img/perfil/arrow-list.png"); margin-left: 30px;}
+#profile .datos-usuario .listado-datos ul li{font-size: 18px; margin-bottom: 5px;}
+#profile .datos-usuario .listado-datos hr{height: 2px; background-color: #000000; margin-top: 10px;margin-bottom: 10px;}
+#profile .datos-usuario .button{display: block; border: 1px solid #1EB250; margin: 15px; color: #1EB250; text-align: center; transition: all 1s ease;}
+#profile .datos-usuario .button:hover{background-color: #1EB250; color: #ffffff;}
+#profile .progreso h2{font-family: "Roboto-Black", sans-serif; font-size: 30px; color: #1EB250; text-align: center;}
+#profile .progreso .pactual{float: left;}
+#profile .progreso .pobjetivo{float: right;}
+#profile .actualiza-peso h3{font-family: "Roboto-Black", sans-serif; font-size: 30px; color: #1EB250; text-align: center;}
+#profile .actualiza-peso p{text-align: center;}
+#profile .actualiza-peso .inputPeso{width: 60%; height: 40px; margin-left: 15%; margin-bottom: 10px; padding: 10px; border-radius: 5px; border: 1px solid grey; background-color: rgba(255, 255, 255, 0.8)}
+#profile .actualiza-peso .weight-submit{width: 20%; height: 40px; margin-bottom: 10px; padding: 10px; border-radius: 5px; border: 1px solid grey; color: #ffffff; background-color: #1EB250;}
 /* Formulario de contacto*/
 #ventanaContacto .cajaform{width: 100%; background-image: none; }
 #ventanaContacto .cajaform input{width: 100%; height: 40px; margin-bottom: 10px; padding: 10px; border-radius: 5px; border: 1px solid grey; background-color: rgba(255, 255, 255, 0.8)}
@@ -140,7 +154,7 @@ footer #aviso-legal a:hover{opacity: 0.6; color: #1EB250;}
 #ventanaContacto #volver-contact #re-contact:hover{color: #ffffff; border: none;}
 
 /* GRID */
-.container{width:1200px;padding:0 0 10px 0}
+.container{width:1200px; padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto;}
 .contenedor > h1 {text-align:center;font-weight:normal;padding:20px 0;font-size:1.5em}
 .contenedor > p {clear:both;text-align:center;font-weight:normal;padding:20px 0;font-size:1.1em}
 .contenedor > div {padding:10px; float:left;display:inline;border:1px solid #fff;background:#ddd;text-align:center;font-size:0.70em}
@@ -164,86 +178,48 @@ footer #aviso-legal a:hover{opacity: 0.6; color: #1EB250;}
 /* RESPONSIVE */
 /* Media queries */
 /*
-  ##Device = Desktops
-*/
-
-@media (min-width: 1281px) {
-    .col-xl-1 {width:8.33%}
-    .col-xl-2 {width:16.66%}
-    .col-xl-3 {width:25%}
-    .col-xl-4 {width:33.33%}
-    .col-xl-5 {width:41.66%}
-    .col-xl-6 {width:50%}
-    .col-xl-7 {width:58.33%}
-    .col-xl-8 {width:66.66%}
-    .col-xl-9 {width:75%}
-    .col-xl-10 {width:83.33%}
-    .col-xl-11 {width:91.66%}
-    .col-xl-12 {width:100%}
-    .visible-xs{display: none;}
-}
 
 /*
   ##Device = Laptops, Desktops
 */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-    .container{width:960px;margin:0 auto;}
-    .col-lg-1 {width:8.33%}
-    .col-lg-2 {width:16.66%}
-    .col-lg-3 {width:25%}
-    .col-lg-4 {width:33.33%}
-    .col-lg-5 {width:41.66%}
-    .col-lg-6 {width:50%}
-    .col-lg-7 {width:58.33%}
-    .col-lg-8 {width:66.66%}
-    .col-lg-9 {width:75%}
-    .col-lg-10 {width:83.33%}
-    .col-lg-11 {width:91.66%}
-    .col-lg-12 {width:100%}
+    .container{width:960px;}
+    .col-lg-1 {width:8.33% !important;}
+    .col-lg-2 {width:16.66% !important;}
+    .col-lg-3 {width:25% !important;}
+    .col-lg-4 {width:33.33% !important;}
+    .col-lg-5 {width:41.66% !important;}
+    .col-lg-6 {width:50% !important;}
+    .col-lg-7 {width:58.33% !important;}
+    .col-lg-8 {width:66.66% !important;}
+    .col-lg-9 {width:75% !important;}
+    .col-lg-10 {width:83.33% !important;}
+    .col-lg-11 {width:91.66% !important;}
+    .col-lg-12 {width:100% !important;}
     .visible-xs{display: none;}
 
 }
 
-/*
-  ##Device = Tablets, Ipads (portrait)
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    .col-l-1 {width:8.33%}
-    .col-l-2 {width:16.66%}
-    .col-l-3 {width:25%}
-    .col-l-4 {width:33.33%}
-    .col-l-5 {width:41.66%}
-    .col-l-6 {width:50%}
-    .col-l-7 {width:58.33%}
-    .col-l-8 {width:66.66%}
-    .col-l-9 {width:75%}
-    .col-l-10 {width:83.33%}
-    .col-l-11 {width:91.66%}
-    .col-l-12 {width:100%}
-    .visible-xs{display: none;}
-    #login h1{font-size: 70px; text-align: center;}
-    #login h2{font-size: 25px; text-align: center;}
-}
 
 /*
   ##Device = Tablets, Ipads (landscape)
 */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    .col-md-1 {width:8.33%}
-    .col-md-2 {width:16.66%}
-    .col-md-3 {width:25%}
-    .col-md-4 {width:33.33%}
-    .col-md-5 {width:41.66%}
-    .col-md-6 {width:50%}
-    .col-md-7 {width:58.33%}
-    .col-md-8 {width:66.66%}
-    .col-md-9 {width:75%}
-    .col-md-10 {width:83.33%}
-    .col-md-11 {width:91.66%}
-    .col-md-12 {width:100%}
+@media (min-width: 768px) and (max-width: 1024px){
+    .container{width:768px;}
+    .col-md-1 {width:8.33% !important;}
+    .col-md-2 {width:16.66% !important;}
+    .col-md-3 {width:25% !important;}
+    .col-md-4 {width:33.33% !important;}
+    .col-md-5 {width:41.66% !important;}
+    .col-md-6 {width:50% !important;}
+    .col-md-7 {width:58.33% !important;}
+    .col-md-8 {width:66.66% !important;}
+    .col-md-9 {width:75% !important;}
+    .col-md-10 {width:83.33% !important;}
+    .col-md-11 {width:91.66% !important;}
+    .col-md-12 {width:100% !important;}
     .visible-xs{display: none;}
     #login h1{font-size: 70px; text-align: center;}
     #login h2{font-size: 25px; text-align: center;}
@@ -255,19 +231,19 @@ footer #aviso-legal a:hover{opacity: 0.6; color: #1EB250;}
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
-    .container{width:480px;margin:0 auto;}
-    .col-sm-1 {width:8.33%}
-    .col-sm-2 {width:16.66%}
-    .col-sm-3 {width:25%}
-    .col-sm-4 {width:33.33%}
-    .col-sm-5 {width:41.66%}
-    .col-sm-6 {width:50%}
-    .col-sm-7 {width:58.33%}
-    .col-sm-8 {width:66.66%}
-    .col-sm-9 {width:75%}
-    .col-sm-10 {width:83.33%}
-    .col-sm-11 {width:91.66%}
-    .col-sm-12 {width:100%}
+    .container{width:481px;}
+    .col-sm-1 {width:8.33% !important;}
+    .col-sm-2 {width:16.66% !important;}
+    .col-sm-3 {width:25% !important;}
+    .col-sm-4 {width:33.33% !important;}
+    .col-sm-5 {width:41.66% !important;}
+    .col-sm-6 {width:50% !important;}
+    .col-sm-7 {width:58.33% !important;}
+    .col-sm-8 {width:66.66% !important;}
+    .col-sm-9 {width:75% !important;}
+    .col-sm-10 {width:83.33% !important;}
+    .col-sm-11 {width:91.66% !important;}
+    .col-sm-12 {width:100% !important;}
     .visible-xs{display: none;}
     #login h1{font-size: 70px; text-align: center;}
     #login h2{font-size: 25px; text-align: center;}
@@ -279,7 +255,7 @@ footer #aviso-legal a:hover{opacity: 0.6; color: #1EB250;}
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
-    .container{width:320px;margin:0 auto;}
+    .container{width:320px;}
     .col-xs-1 {width:8.33% !important;}
     .col-xs-2 {width:16.66% !important;}
     .col-xs-3 {width:25% !important;}
@@ -307,4 +283,7 @@ footer #aviso-legal a:hover{opacity: 0.6; color: #1EB250;}
     header #nav-button{margin: 15px 0 0 0; padding: 0; font-size: 20px;}
     header #logout{margin: 15px 0 0 0; padding: 0; font-size: 20px;}
     #navMenu{overflow: scroll;}
+    #profile .profile-banner .profile-img{margin-top: 10px;}
+    #profile .profile-banner .profile-img img{display: block; margin: 0 auto;}
+    #profile .profile-banner .profile-img h1{display: block; text-align: center;}
 }
