@@ -35,6 +35,28 @@ class database {
             echo "¡Error!: " . $e->getMessage() . "";
         }
     }
+
+    public function beginTransaction(){
+        try{
+            $this->conexion->beginTransaction();
+        }catch(PDOException $e){
+            print $e->getMessage();
+        }
+    }
+    public function Commit(){
+        try{
+            $this->conexion->commit();
+        }catch(PDOException $e){
+            print $e->getMessage();
+        }
+    }
+    public function Rollback(){
+        try{
+            $this->conexion->rollback();
+        }catch(PDOException $e){
+            print $e->getMessage();
+        }
+    }
     
     //ejecuta una sentencia sql
     public function query($sql,$params = null){

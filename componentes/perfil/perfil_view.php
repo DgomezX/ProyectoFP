@@ -94,12 +94,18 @@
             <div class="row actualiza-peso">
                 <h3>Actualizar tu peso</h3>
                 <p>Añade tu peso actual</p>
-                <form action="">
+                <form action="index.php?option=perfil" method="POST">
                     <div class="col-12">
                         <input class="inputPeso" type="number" name="peso" placeholder="Introduce tu peso en kg" required>
-                        <input type="submit" class="weight-submit" name="agregar" value="Agregar">
+                        <input type="submit" class="weight-submit" name="agregarPeso" value="Agregar">
                     </div>
                 </form>
+                <?php
+                if(isset($rPeso)){?>
+                    <p><?php echo $rPeso?></p>
+                <?php
+                }
+                ?>
             </div>
         </div>
     </section>
