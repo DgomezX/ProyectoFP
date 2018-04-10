@@ -31,7 +31,7 @@
                         <li>Los hidratos de carbono diarios que necesitas para tu objetivo son:<?php echo $hidratos;?> gramos</li>
                         <li>Las grasas que necesitas para tu objetivo son: <?php echo $hidratos;?> gramos</li>
                     </ul>
-                    <a href="index.php?option=datos" class="button">Cambiar datos</a>
+                    <a href="index.php?option=datos&modifica=perfil" class="button">Cambiar datos</a>
                 </div>
             </div>
         </div>

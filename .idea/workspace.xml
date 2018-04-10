@@ -3,11 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="6a7b4b46-f8f2-4e21-8b1a-0c70260f3552" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/componentes/commons/head.php" afterPath="$PROJECT_DIR$/componentes/commons/head.php" />
-      <change beforePath="$PROJECT_DIR$/componentes/perfil/controller.php" afterPath="$PROJECT_DIR$/componentes/perfil/controller.php" />
-      <change beforePath="$PROJECT_DIR$/componentes/perfil/model.php" afterPath="$PROJECT_DIR$/componentes/perfil/model.php" />
+      <change beforePath="$PROJECT_DIR$/componentes/datos/controller.php" afterPath="$PROJECT_DIR$/componentes/datos/controller.php" />
+      <change beforePath="$PROJECT_DIR$/componentes/datos/datos_view.php" afterPath="$PROJECT_DIR$/componentes/datos/datos_view.php" />
+      <change beforePath="$PROJECT_DIR$/componentes/datos/model.php" afterPath="$PROJECT_DIR$/componentes/datos/model.php" />
+      <change beforePath="$PROJECT_DIR$/componentes/login/model.php" afterPath="$PROJECT_DIR$/componentes/login/model.php" />
       <change beforePath="$PROJECT_DIR$/componentes/perfil/perfil_view.php" afterPath="$PROJECT_DIR$/componentes/perfil/perfil_view.php" />
-      <change beforePath="$PROJECT_DIR$/css/estilo.css" afterPath="$PROJECT_DIR$/css/estilo.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,63 +21,45 @@
       <file leaf-file-name="estilo.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/estilo.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2414">
-              <caret line="142" column="75" lean-forward="false" selection-start-line="142" selection-start-column="75" selection-end-line="142" selection-end-column="75" />
+            <state relative-caret-position="357">
+              <caret line="160" column="63" lean-forward="false" selection-start-line="160" selection-start-column="63" selection-end-line="160" selection-end-column="63" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="head.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/componentes/commons/head.php">
+      <file leaf-file-name="model.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/componentes/datos/model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="model.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/componentes/perfil/model.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="165" lean-forward="false" selection-start-line="26" selection-start-column="165" selection-end-line="26" selection-end-column="165" />
+            <state relative-caret-position="871">
+              <caret line="66" column="12" lean-forward="false" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
               <folding>
-                <marker date="1522919058270" expanded="true" signature="115:168" ph="SELECT * FRO... datos_usuarios" />
-                <marker date="1522919058270" expanded="true" signature="440:488" ph="INSERT INTO dietas... " />
-                <marker date="1522919058270" expanded="true" signature="771:785" ph="SELECT * FRO... evolucion_usuario" />
-                <marker date="1522919058270" expanded="true" signature="771:855" ph="SELECT * FRO... evolucion_usuario" />
+                <marker date="1523374810078" expanded="true" signature="201:239" ph="SELECT * FRO... users" />
+                <marker date="1523374810078" expanded="true" signature="712:841" ph="INSERT INTO datos_usuarios... " />
+                <marker date="1523374810078" expanded="true" signature="1363:1436" ph="INSERT INTO evolucion_usuario... " />
+                <marker date="1523374810078" expanded="true" signature="1978:2031" ph="SELECT * FRO... datos_usuarios" />
+                <marker date="1523374810078" expanded="true" signature="2514:2713" ph="UPDATE datos_usuarios... " />
+                <marker date="1523374810078" expanded="true" signature="3232:3305" ph="INSERT INTO evolucion_usuario... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controller.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/componentes/perfil/controller.php">
+      <file leaf-file-name="controller.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/componentes/datos/controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="31" lean-forward="false" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+            <state relative-caret-position="1054">
+              <caret line="62" column="37" lean-forward="true" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="perfil_view.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/componentes/perfil/perfil_view.php">
+      <file leaf-file-name="datos_view.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/componentes/datos/datos_view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="49" column="31" lean-forward="false" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login_view.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/componentes/login/login_view.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="41" column="47" lean-forward="false" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+            <state relative-caret-position="871">
+              <caret line="60" column="51" lean-forward="false" selection-start-line="60" selection-start-column="51" selection-end-line="60" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -98,6 +80,7 @@
       <find>contenedor</find>
       <find>grid</find>
       <find />
+      <find>objetivo</find>
     </findStrings>
     <replaceStrings>
       <replace>container</replace>
@@ -126,22 +109,16 @@
         <option value="$PROJECT_DIR$/librerias/framework.php" />
         <option value="$PROJECT_DIR$/componentes/login/view.php" />
         <option value="$PROJECT_DIR$/css/slippry.css" />
-        <option value="$PROJECT_DIR$/librerias/db.pdo.php" />
-        <option value="$PROJECT_DIR$/componentes/login/model.php" />
-        <option value="$PROJECT_DIR$/componentes/datos/model.php" />
         <option value="$PROJECT_DIR$/componentes/inicio/inicio_view.php" />
         <option value="$PROJECT_DIR$/componentes/perfil/view.php" />
         <option value="$PROJECT_DIR$/componentes/cierra_sesion/controller.php" />
         <option value="$PROJECT_DIR$/componentes/dietaAmpliada/controller.php" />
         <option value="$PROJECT_DIR$/componentes/dietaAmpliada/model.php" />
-        <option value="$PROJECT_DIR$/componentes/datos/datos_view.php" />
-        <option value="$PROJECT_DIR$/componentes/datos/controller.php" />
         <option value="$PROJECT_DIR$/componentes/dietas/controller.php" />
         <option value="$PROJECT_DIR$/componentes/dietas/model.php" />
         <option value="$PROJECT_DIR$/componentes/dietaAmpliada/view.php" />
         <option value="$PROJECT_DIR$/componentes/dietas/view.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/componentes/login/controller.php" />
         <option value="$PROJECT_DIR$/componentes/commons/form_contact.php" />
         <option value="$PROJECT_DIR$/componentes/formularioContacto/controller.php" />
         <option value="$PROJECT_DIR$/componentes/formularioContacto/form_contact.php" />
@@ -149,13 +126,19 @@
         <option value="$PROJECT_DIR$/componentes/login/login_view.php" />
         <option value="$PROJECT_DIR$/js/functions.js" />
         <option value="$PROJECT_DIR$/componentes/commons/footer.php" />
-        <option value="$PROJECT_DIR$/componentes/commons/header.php" />
         <option value="$PROJECT_DIR$/componentes/commons/logout.php" />
         <option value="$PROJECT_DIR$/componentes/commons/head.php" />
+        <option value="$PROJECT_DIR$/librerias/db.pdo.php" />
+        <option value="$PROJECT_DIR$/componentes/perfil/model.php" />
         <option value="$PROJECT_DIR$/componentes/perfil/controller.php" />
+        <option value="$PROJECT_DIR$/componentes/login/controller.php" />
+        <option value="$PROJECT_DIR$/componentes/commons/header.php" />
         <option value="$PROJECT_DIR$/css/estilo.css" />
         <option value="$PROJECT_DIR$/componentes/perfil/perfil_view.php" />
-        <option value="$PROJECT_DIR$/componentes/perfil/model.php" />
+        <option value="$PROJECT_DIR$/componentes/datos/datos_view.php" />
+        <option value="$PROJECT_DIR$/componentes/datos/model.php" />
+        <option value="$PROJECT_DIR$/componentes/login/model.php" />
+        <option value="$PROJECT_DIR$/componentes/datos/controller.php" />
       </list>
     </option>
   </component>
@@ -187,6 +170,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -204,12 +188,6 @@
               <item name="ProyectoFP" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProyectoFP" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="componentes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="commons" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="ProyectoFP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProyectoFP" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="componentes" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="datos" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -221,18 +199,23 @@
             <path>
               <item name="ProyectoFP" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProyectoFP" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="img" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="componentes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="perfil" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="ProyectoFP" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProyectoFP" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="ProyectoFP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProyectoFP" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="librerias" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -323,7 +306,11 @@
       <workItem from="1522850401257" duration="5836000" />
       <workItem from="1522872661793" duration="6075000" />
       <workItem from="1522914727685" duration="4331000" />
-      <workItem from="1522936514043" duration="6000" />
+      <workItem from="1522936514043" duration="49000" />
+      <workItem from="1522936939588" duration="243000" />
+      <workItem from="1523281636216" duration="5877000" />
+      <workItem from="1523367347500" duration="7545000" />
+      <workItem from="1523375062618" duration="831000" />
     </task>
     <task id="LOCAL-00001" summary="Reestructura del mvc y agregado grid responsive">
       <created>1521634192564</created>
@@ -388,11 +375,32 @@
       <option name="project" value="LOCAL" />
       <updated>1522751243011</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="agregada grafica seguimiento corporal">
+      <created>1522936550470</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1522936550471</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Agregada funcionalidad para hacer transacciones y agregada apartado modificar peso desde perfil">
+      <created>1523287544402</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1523287544402</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Si existe sesion de usuario se redirige al perfil en vez de al login">
+      <created>1523367822525</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1523367822525</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="203267000" />
+    <option name="totallyTimeSpent" value="217806000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -405,8 +413,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="22" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13272922" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1369936" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32795697" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -490,7 +499,10 @@
     <MESSAGE value="Implementado menu navegacion" />
     <MESSAGE value="funcionalidad cerrar sesion y agregado footer" />
     <MESSAGE value="agregado banner perfil con foto y nick deusuario" />
-    <option name="LAST_COMMIT_MESSAGE" value="agregado banner perfil con foto y nick deusuario" />
+    <MESSAGE value="agregada grafica seguimiento corporal" />
+    <MESSAGE value="Agregada funcionalidad para hacer transacciones y agregada apartado modificar peso desde perfil" />
+    <MESSAGE value="Si existe sesion de usuario se redirige al perfil en vez de al login" />
+    <option name="LAST_COMMIT_MESSAGE" value="Si existe sesion de usuario se redirige al perfil en vez de al login" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -513,13 +525,6 @@
     <entry file="file://$PROJECT_DIR$/css/reset.css" />
     <entry file="file://$PROJECT_DIR$/css/slippry.css" />
     <entry file="file://$PROJECT_DIR$/2017p_dgomez.sql" />
-    <entry file="file://$PROJECT_DIR$/componentes/datos/model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="46" column="7" lean-forward="false" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/componentes/inicio/controller.php" />
     <entry file="file://$PROJECT_DIR$/componentes/inicio/model.php" />
     <entry file="file://$PROJECT_DIR$/componentes/cierra_sesion/controller.php">
@@ -574,13 +579,6 @@
     <entry file="file://$PROJECT_DIR$/componentes/inicio/inicio_view.php" />
     <entry file="file://$PROJECT_DIR$/componentes/commons/procesar_form_contact.php" />
     <entry file="file://$PROJECT_DIR$/componentes/commons/form_contact.php" />
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/filter/filter.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -609,31 +607,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/componentes/login/model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="45" lean-forward="false" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/librerias/framework.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/componentes/commons/menu_nav.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="19" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/componentes/commons/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -658,85 +635,140 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/componentes/login/controller.php">
+    <entry file="file://$PROJECT_DIR$/componentes/commons/head.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/componentes/datos/controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="81" column="48" lean-forward="false" selection-start-line="81" selection-start-column="48" selection-end-line="81" selection-end-column="48" />
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/librerias/db.pdo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="701">
-          <caret line="82" column="20" lean-forward="false" selection-start-line="82" selection-start-column="20" selection-end-line="82" selection-end-column="20" />
+        <state relative-caret-position="17">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/componentes/commons/head.php">
+    <entry file="file://$PROJECT_DIR$/componentes/commons/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="42" />
-          <folding />
+        <state relative-caret-position="68">
+          <caret line="4" column="113" lean-forward="true" selection-start-line="4" selection-start-column="113" selection-end-line="4" selection-end-column="113" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/componentes/perfil/controller.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="31" lean-forward="false" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-          <folding />
+        <state relative-caret-position="119">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/componentes/datos/datos_view.php">
+    <entry file="file://$PROJECT_DIR$/librerias/framework.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="129" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/componentes/login/login_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="47" lean-forward="false" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/estilo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2414">
-          <caret line="142" column="75" lean-forward="false" selection-start-line="142" selection-start-column="75" selection-end-line="142" selection-end-column="75" />
-          <folding />
+        <state relative-caret-position="289">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/componentes/perfil/perfil_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="31" lean-forward="false" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
+        <state relative-caret-position="102">
+          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="7" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/componentes/perfil/controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/componentes/login/login_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="41" column="47" lean-forward="false" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/componentes/perfil/model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="165" lean-forward="false" selection-start-line="26" selection-start-column="165" selection-end-line="26" selection-end-column="165" />
+        <state relative-caret-position="871">
+          <caret line="55" column="12" lean-forward="false" selection-start-line="55" selection-start-column="12" selection-end-line="56" selection-end-column="66" />
           <folding>
-            <marker date="1522919058270" expanded="true" signature="115:168" ph="SELECT * FRO... datos_usuarios" />
-            <marker date="1522919058270" expanded="true" signature="440:488" ph="INSERT INTO dietas... " />
-            <marker date="1522919058270" expanded="true" signature="771:785" ph="SELECT * FRO... evolucion_usuario" />
-            <marker date="1522919058270" expanded="true" signature="771:855" ph="SELECT * FRO... evolucion_usuario" />
+            <marker date="1523286966098" expanded="true" signature="115:168" ph="SELECT * FRO... datos_usuarios" />
+            <marker date="1523286966098" expanded="true" signature="440:488" ph="INSERT INTO dietas... " />
+            <marker date="1523286966098" expanded="true" signature="771:785" ph="SELECT * FRO... evolucion_usuario" />
+            <marker date="1523286966098" expanded="true" signature="771:855" ph="SELECT * FRO... evolucion_usuario" />
+            <marker date="1523286966098" expanded="true" signature="1265:1338" ph="INSERT INTO evolucion_usuario... " />
+            <marker date="1523286966098" expanded="true" signature="1265:1548" ph="INSERT INTO evolucion_usuario... " />
+            <marker date="1523286966098" expanded="true" signature="1571:1603" ph="UPDATE users... " />
+            <marker date="1523286966098" expanded="true" signature="1571:1604" ph="UPDATE users... " />
+            <marker date="1523286966098" expanded="true" signature="1571:1626" ph="UPDATE users... " />
+            <marker date="1523286966098" expanded="true" signature="1571:1634" ph="UPDATE datos_usuarios... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/componentes/login/controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="48" lean-forward="false" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/componentes/login/model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="42" lean-forward="false" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+          <folding>
+            <marker date="1523375464142" expanded="true" signature="123:183" ph="INSERT INTO users... " />
+            <marker date="1523375464142" expanded="true" signature="535:573" ph="SELECT * FRO... users" />
+            <marker date="1523375464142" expanded="true" signature="850:913" ph="SELECT * FRO... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/estilo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="160" column="63" lean-forward="false" selection-start-line="160" selection-start-column="63" selection-end-line="160" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/componentes/datos/model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="871">
+          <caret line="66" column="12" lean-forward="false" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
+          <folding>
+            <marker date="1523374810078" expanded="true" signature="201:239" ph="SELECT * FRO... users" />
+            <marker date="1523374810078" expanded="true" signature="712:841" ph="INSERT INTO datos_usuarios... " />
+            <marker date="1523374810078" expanded="true" signature="1363:1436" ph="INSERT INTO evolucion_usuario... " />
+            <marker date="1523374810078" expanded="true" signature="1978:2031" ph="SELECT * FRO... datos_usuarios" />
+            <marker date="1523374810078" expanded="true" signature="2514:2713" ph="UPDATE datos_usuarios... " />
+            <marker date="1523374810078" expanded="true" signature="3232:3305" ph="INSERT INTO evolucion_usuario... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/componentes/datos/datos_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="871">
+          <caret line="60" column="51" lean-forward="false" selection-start-line="60" selection-start-column="51" selection-end-line="60" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/componentes/datos/controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="62" column="37" lean-forward="true" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>

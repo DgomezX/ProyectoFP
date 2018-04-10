@@ -2,10 +2,11 @@
 class modelLogin{
     public static function registro($nombre, $pass){
         $db = new database();
-        $sql = 'INSERT INTO users VALUES(NULL,:nick, :pass, :id_nivel)';
+        $sql = 'INSERT INTO users VALUES(NULL,:nick, :pass,:photo,:id_nivel)';
         $params = array(
             ':nick'   => $nombre,
             ':pass'     => $pass,
+            ':photo'     => 'default.png',
             ':id_nivel'    => 3
         );
         $db->query($sql, $params);
