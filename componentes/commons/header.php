@@ -2,7 +2,7 @@
 	<div class="row">
         <div class="logo-container col-xs-8 col-4">
             <div class="logo">
-                <img src="/img/commons/logo.png" alt="logo" class="logo"><p>Dreamdiet</p>
+                <a href="index.php"><img src="/img/commons/logo.png" alt="logo" class="logo"><p>Dreamdiet</p></a>
             </div>
         </div>
         <div class="col-xs-2 col-4">

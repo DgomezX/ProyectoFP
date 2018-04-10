@@ -1,4 +1,7 @@
 <?php
+if(isset($_SESSION["usuario"])){
+    header("Location: index.php?option=perfil");
+}
 include 'componentes/login/model.php';
 $title = 'DreamDiet | Mejora tu alimentación';
 $location = 'login';
