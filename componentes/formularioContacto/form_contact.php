@@ -12,8 +12,8 @@
                     <input type="email" name="email" id="email" placeholder="Correo Electrónico" required> <br>
                     <textarea rows="10" cols="41" maxlength="500"  name="mensaje" id="mensaje" placeholder="Este campo esta limitado a 500 caracteres" name="mensaje" id="mensaje" required></textarea>
                     <div class="row">
-                        <input type="submit" name="contactar" required id="contactar" value="ENVIAR" class="enviar col-5">
-                        <input type="reset" value="LIMPIAR" class="limpiar col-5">
+                        <input type="submit" name="contactar" required id="contactar" value="ENVIAR" class="enviar">
+                        <input type="reset" value="LIMPIAR" class="limpiar">
                     </div>
                 </div>
                 <div id="volver-contact">

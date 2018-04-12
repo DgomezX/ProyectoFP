@@ -96,7 +96,7 @@
                 <p>Añade tu peso actual</p>
                 <form action="index.php?option=perfil" method="POST">
                     <div class="col-12">
-                        <input class="inputPeso" type="number" name="peso" placeholder="Introduce tu peso en kg" required>
+                        <input class="inputPeso" min="0" type="number" name="peso" placeholder="Introduce tu peso en kg" required>
                         <input type="submit" class="weight-submit" name="agregarPeso" value="Agregar">
                     </div>
                 </form>
