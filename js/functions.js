@@ -78,7 +78,7 @@ function calcularDatos(){
         switch(parseInt(objetiv)){
             case 1:
                 cal = Math.round(GET - 200);
-                prote = parseInt(peso) * 2;
+                prote = Math.round((parseInt(peso) * 2)*100)/100;
                 protecal = prote * 4;
                 grasascal  = (cal *20) /100;
                 grasas = grasascal /4;
@@ -88,7 +88,7 @@ function calcularDatos(){
 
             case 2:
                 cal = Math.round(GET +200);
-                prote = parseInt(peso) * 2.2;
+                prote = Math.round((parseInt(peso) * 2.2)*100)/100;
                 protecal = prote * 4;
                 grasascal  = (cal *20) /100;
                 grasas = grasascal /4;
@@ -98,7 +98,7 @@ function calcularDatos(){
 
             case 3:
                 cal = Math.round(GET);
-                prote = parseInt(peso) * 1.8;
+                prote = Math.round((parseInt(peso) * 1.8)*100)/100;
                 protecal = prote * 4;
                 grasascal  = (cal *20) /100;
                 grasas = grasascal /4;
@@ -115,7 +115,7 @@ function calcularDatos(){
         switch (parseInt(objetiv)){
             case 1:
                 cal = Math.round(GET - 200);
-                prote = parseInt(peso) * 2;
+                prote = Math.round((parseInt(peso) * 2)*100)/100;
                 protecal = prote * 4;
                 grasascal  = (cal *20) /100;
                 grasas = grasascal /4;
@@ -124,7 +124,7 @@ function calcularDatos(){
                 break;
             case 2:
                 cal = Math.round(GET +200);
-                prote = parseInt(peso) * 2.2;
+                prote = Math.round((parseInt(peso) * 2.2)*100)/100;
                 protecal = prote * 4;
                 grasascal  = (cal *20) /100;
                 grasas = grasascal /4;
@@ -133,7 +133,7 @@ function calcularDatos(){
                 break;
             case 3:
                 cal = Math.round(GET);
-                prote = parseInt(peso) * 1.8;
+                prote = Math.round((parseInt(peso) * 1.8)*100)/100;
                 protecal = prote * 4;
                 grasascal  = (cal *20) /100;
                 grasas = grasascal /4;
@@ -161,6 +161,7 @@ function calcularDatos(){
     mostrarGrasas.innerHTML = grasas;
     document.getElementById('hidratosGuardar').value = hc;
     mostrarHidratos.innerHTML = hc;
+    $('#resultado-calculo').fadeIn(500);
     return false
 }
 

@@ -14,7 +14,6 @@ $hidratos = '';
 
 // Si el usuario viene del perfil pasara por aqui
 if(isset($_GET['modifica'])){
-    echo 'vengo desde el perfil del usuario';
     $datos = modelDatos::obtenDatos($_SESSION['usuario']['id']);
 }
 

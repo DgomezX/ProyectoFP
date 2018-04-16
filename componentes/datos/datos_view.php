@@ -50,7 +50,7 @@
         </div>
     </section>
     <div style="clear: both"></div>
-    <section>
+    <section id="resultado-calculo">
         <h2>Necesidades Alimenticias diarias</h2>
         <div class="container">
             <div class="row">
