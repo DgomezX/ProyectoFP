@@ -13,7 +13,7 @@ class modelDietas{
 
     public static function deleteDieta($id){
         $db = new database();
-        $sql = 'DELETE * FROM dietas INNER JOIN dietas_rel_alimentos USING(id) WHERE id = :id';
+        $sql = 'DELETE FROM dietas WHERE id = :id';
         $params = array(
             ':id'   => $id
         );
@@ -21,4 +21,18 @@ class modelDietas{
         $dieta = $db->affectedRows();
         return $dieta;
     }
+
+
+    public static function addDieta($nombre,$n_comidas, $id_usr){
+        $db = new database();
+        $sql = 'INSERT INTO dietas VALUES(NULL,:nombre, :n_comidas, :id_usr)';
+        $params = array(
+            ':nombre'   => $nombre,
+            ':n_comidas' =>$n_comidas,
+            ':id_usr'     => $id_usr
+        );
+        $db->query($sql, $params);
+        return $db->affectedRows();
+    }
+
 }
