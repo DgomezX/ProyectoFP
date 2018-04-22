@@ -11,6 +11,18 @@ class modelDietas{
         return $dietas;
     }
 
+    public static function obtenDieta($nombre, $id_user){
+        $db = new database();
+        $sql = 'SELECT * FROM dietas WHERE id_usr = :id_user AND nombre = :nombre';
+        $params = array(
+            ':nombre'   => $nombre,
+            ':id_user'   => $id_user
+        );
+        $db->query($sql, $params);
+        $dietas = $db->cargaFila();
+        return $dietas;
+    }
+
     public static function deleteDieta($id){
         $db = new database();
         $sql = 'DELETE FROM dietas WHERE id = :id';

@@ -36,7 +36,7 @@
                                 echo "<tr>";
                                 echo "<td>".$i."</td>";
                                 echo "<td>".$dieta['nombre']."</td>";
-                                echo "<td><a href='index.php?option=dietaAmpliada&dieta_id=".$dieta['id']."'><i class=\"fas fa-eye\"></i></a><a href='index.php?option=editarDieta&dieta_id=".$dieta['id']."'><i class=\"far fa-edit\"></i></a><a href='index.php?option=dietas&dieta_idBorra=".$dieta['id']."'><i class=\"fas fa-trash-alt\"></i></a></td>";
+                                echo "<td><a href='index.php?option=dietaAmpliada&dieta_id=".$dieta['id']."'><i class=\"fas fa-eye\"></i></a><a href='index.php?option=editorDietas&id_dieta=".$dieta['id']."'><i class=\"far fa-edit\"></i></a><a href='index.php?option=dietas&dieta_idBorra=".$dieta['id']."'><i class=\"fas fa-trash-alt\"></i></a></td>";
                                 echo "<tr>";
                             }?>
                             </tbody>

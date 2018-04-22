@@ -8,6 +8,8 @@ if(isset($_POST['crearDiet'])){
     $n_comidas = $_POST['nComidas'];
     $id_user = $_SESSION['usuario']['id'];
     $add_dieta = modelDietas::addDieta($nombre, $n_comidas, $id_user);
+    $dietaCreada = modelDietas::obtenDieta($nombre, $id_user); // Realizo esta consulta para obtener el id de la dieta que acabo de crear
+    header("Location: index.php?option=editorDietas&id_dieta=".$dietaCreada['id']);
 }
 
 //Borrar Dietas
