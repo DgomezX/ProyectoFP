@@ -24,13 +24,17 @@
                     <div class="col-12">
                         <table>
                             <thead>
+                                <th>#</th>
                                 <th>Nombre</th>
                                 <th>Acciones</th>
                             </thead>
                             <tbody>
                             <?php
+                            $i = 0;
                             foreach($dietas as $dieta){
+                                $i++;
                                 echo "<tr>";
+                                echo "<td>".$i."</td>";
                                 echo "<td>".$dieta['nombre']."</td>";
                                 echo "<td><a href='index.php?option=dietaAmpliada&dieta_id=".$dieta['id']."'><i class=\"fas fa-eye\"></i></a><a href='index.php?option=editarDieta&dieta_id=".$dieta['id']."'><i class=\"far fa-edit\"></i></a><a href='index.php?option=dietas&dieta_idBorra=".$dieta['id']."'><i class=\"fas fa-trash-alt\"></i></a></td>";
                                 echo "<tr>";
@@ -72,5 +76,6 @@
             </div>
         </div>
     </section>
+    <?php include 'componentes/commons/footer.php'; 	// footer ?>
 </body>
 </html>
