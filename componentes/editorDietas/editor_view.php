@@ -3,7 +3,7 @@
 <head>
     <?php include 'componentes/commons/head.php'; 	// head ?>
 </head>
-<body>
+<body id="<?php echo $location; ?>">
     <?php include 'componentes/commons/header.php'; 	// header ?>
     <?php include 'componentes/commons/menu_nav.php'; 	// menu navegacion ?>
     <h1>Dieta: <?php echo $dieta['nombre'];?></h1>
@@ -62,24 +62,24 @@
                         <tbody>
                             <tr>
                                 <td>Totales</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td><?php echo $tCalorias; ?></td>
+                                <td><?php echo $tProteinas;  ?></td>
+                                <td><?php echo $tGrasas; ?></td>
+                                <td><?php echo $tHidratos; ?></td>
                             </tr>
                             <tr>
                                 <td>Tus necesidades</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td><?php echo $oCalorias; ?></td>
+                                <td><?php echo $oProteinas; ?></td>
+                                <td><?php echo $oGrasas; ?></td>
+                                <td><?php echo $oHidratos; ?></td>
                             </tr>
                             <tr>
                                 <td>Restantes</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td><?php echo $rCalorias; ?></td>
+                                <td><?php echo $rProteinas; ?></td>
+                                <td><?php echo $rGrasas; ?></td>
+                                <td><?php echo $rHidratos; ?></td>
                             </tr>
                         </tbody>
                     </table>

@@ -23,4 +23,15 @@ class modelEditor{
         $alimentos = $db->cargaMatriz();
         return $alimentos;
     }
+
+    public static function obtenDatosUsuario($id){
+        $db = new database();
+        $sql = 'SELECT * FROM datos_usuarios WHERE id_user = :id_user';
+        $params = array(
+            ':id_user'   => $id
+        );
+        $db->query($sql, $params);
+        $datos = $db->cargaFila();
+        return $datos;
+    }
 }

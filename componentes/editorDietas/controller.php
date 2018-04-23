@@ -6,6 +6,8 @@ $location = 'editor_dieta';
 if(isset($_GET['id_dieta'])){
     $id_dieta = $_GET['id_dieta'];
     $dieta = modelEditor::obtenDieta($id_dieta);
+    $datosUsuario = modelEditor::obtenDatosUsuario($_SESSION['usuario']['id']);
+    //var_dump($datosUsuario);die();
     $comidas = array();
     //Obtengo los alimentos de esa dieta distribuidos en cada comida
     $comida1 = modelEditor::obtenAlimentosComidas($id_dieta, 1);
@@ -46,7 +48,21 @@ if(isset($_GET['id_dieta'])){
             break;
     }
     //Calculos de calorias, proteinas, grasas e hidratos.
-
+    //--------recuento macros de la dieta
+    $tCalorias = intval($dieta['calorias']);
+    $tProteinas = floatval($dieta['proteinas']);
+    $tGrasas = floatval($dieta['grasas']);
+    $tHidratos = floatval($dieta['hidratos']);
+    //---------objetivo macros del usuario
+    $oCalorias = intval($datosUsuario['calorias']);
+    $oProteinas = floatval($datosUsuario['proteinas']);
+    $oGrasas = floatval($datosUsuario['grasas']);
+    $oHidratos = floatval($datosUsuario['hidratos']);
+    //--------- calculo restantes para completar requisitos
+    $rCalorias = $oCalorias - $tCalorias;
+    $rProteinas = $oProteinas - $tProteinas;
+    $rGrasas = $oGrasas - $tGrasas;
+    $rHidratos = $oHidratos - $tHidratos;
 }
 
 include 'componentes/editorDietas/editor_view.php';
