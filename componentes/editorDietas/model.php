@@ -14,7 +14,7 @@ class modelEditor{
 
     public static function obtenAlimentosComidas($id_dieta, $id_comida){
         $db = new database();
-        $sql = 'SELECT * FROM dietas_rel_alimentos WHERE id_diet = :id_dieta AND id_comida = :id_comida';
+        $sql = 'SELECT dietas_rel_alimentos.*,alimentos.nombre,alimentos.marca FROM dietas_rel_alimentos LEFT JOIN alimentos ON alimentos.id = dietas_rel_alimentos.id_alim WHERE id_diet = :id_dieta AND id_comida = :id_comida';
         $params = array(
             ':id_dieta' => $id_dieta,
             ':id_comida' => $id_comida
