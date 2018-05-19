@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
     <?php include 'componentes/commons/head.php'; 	// head ?>
 </head>
@@ -39,7 +39,7 @@
                             <?}
                             ?>
                             <tr>
-                                <a href="">agregar alimento</a>
+                                <a href="index.php?option=buscadorAlimentos&dieta_id=<?php echo $dieta['id']; ?>&comida=<?php echo $key; ?>">agregar alimento</a>
                             </tr>
                             </tbody>
                         </table>
