@@ -210,6 +210,14 @@ footer #aviso-legal a:hover{opacity: 0.6; color: #1EB250;}
 #editor_dieta #edit_diet_nums table td{text-align: center; padding: 5px;}
 #editor_dieta #edit_diet_nums table .enun_tabla{text-align: left; padding: 5px; background-color: #1EB250; color: #ffffff;}
 
+/* BUSCADOR DE ALIMENTOS */
+#buscador_alimentos h1{text-align: center; font-size: 50px; color: #1EB250; font-family: "Roboto-Black", sans-serif;}
+#buscador_alimentos #form_buscador_alim .box{margin: 100px auto;width: 300px;height: 50px;}
+#buscador_alimentos #form_buscador_alim .box .container-1{width: 300px;vertical-align: middle;white-space: nowrap;position: relative;}
+#buscador_alimentos #form_buscador_alim .box .container-1 input#search{width: 300px;height: 50px;background: #2b303b;border: none;font-size: 10pt;float: left;color: #63717f;padding-left: 45px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;transition: background .55s ease;}
+#buscador_alimentos #form_buscador_alim .box .container-1 .icon{position: absolute;left: 17px; top: 15px;z-index: 1;color: #63717f;}
+#buscador_alimentos #form_buscador_alim .box .container-1 input#search:hover,#buscador_alimentos #form_buscador_alim .box .container-1 input#search:focus, #buscador_alimentos #form_buscador_alim .box .container-1 input#search:active{outline:none;background: #ffffff;}
+
 
     /* Formulario de contacto*/
 #ventanaContacto .cajaform{width: 100%; background-image: none; }
