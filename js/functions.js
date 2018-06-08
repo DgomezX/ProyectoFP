@@ -202,6 +202,28 @@ $(document).ready(function(){
         $('#navMenu').fadeOut(500);
     })
 
+    //Buscador de alimentos
+
+    $('#search-alim1').on('keyup', function(event){
+        event.preventDefault();
+
+        var consulta = $("#search-alim").val();
+
+        $.ajax({
+            url: 'index.php?option=buscadorAlimentos',
+            type: 'POST',
+            data: {'search': consulta}
+        }).done(function (response) {
+            if (response.estado == "OK"){
+                console.log(response);
+            }
+            else{
+                alert(response.mensaje);
+            }
+        }).fail(function(jqXHR, textStatus, errorThrown){
+            alert("Se produjo un error: " + textStatus);
+        })
+    })
 });
 
 

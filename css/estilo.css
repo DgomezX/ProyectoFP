@@ -212,11 +212,12 @@ footer #aviso-legal a:hover{opacity: 0.6; color: #1EB250;}
 
 /* BUSCADOR DE ALIMENTOS */
 #buscador_alimentos h1{text-align: center; font-size: 50px; color: #1EB250; font-family: "Roboto-Black", sans-serif;}
-#buscador_alimentos #form_buscador_alim .box{margin: 100px auto;width: 300px;height: 50px;}
+#buscador_alimentos #form_buscador_alim .box{margin: 20px auto;width: 300px;height: 50px;}
 #buscador_alimentos #form_buscador_alim .box .container-1{width: 300px;vertical-align: middle;white-space: nowrap;position: relative;}
-#buscador_alimentos #form_buscador_alim .box .container-1 input#search{width: 300px;height: 50px;background: #2b303b;border: none;font-size: 10pt;float: left;color: #63717f;padding-left: 45px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;transition: background .55s ease;}
-#buscador_alimentos #form_buscador_alim .box .container-1 .icon{position: absolute;left: 17px; top: 15px;z-index: 1;color: #63717f;}
-#buscador_alimentos #form_buscador_alim .box .container-1 input#search:hover,#buscador_alimentos #form_buscador_alim .box .container-1 input#search:focus, #buscador_alimentos #form_buscador_alim .box .container-1 input#search:active{outline:none;background: #ffffff;}
+#buscador_alimentos #form_buscador_alim .box .container-1 input#search-alim{width: 300px;height: 50px;background: #757575;border: none;font-size: 10pt;float: left;color: #ffffff;padding-left: 45px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;transition: background .55s ease;}
+#buscador_alimentos #form_buscador_alim .box .container-1 .icon{position: absolute;left: 17px; top: 15px;z-index: 1;color: #ffffff;}
+#buscador_alimentos #form_buscador_alim .box .container-1:hover .icon{color: #1EB250;}
+#buscador_alimentos #form_buscador_alim .box .container-1 input#search-alim:hover,#buscador_alimentos #form_buscador_alim .box .container-1 input#search-alim:focus, #buscador_alimentos #form_buscador_alim .box .container-1 input#search-alim:active{outline:none;background: #ffffff; border: 1px solid #1EB250; color: #1EB250;}
 
 
     /* Formulario de contacto*/

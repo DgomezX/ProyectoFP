@@ -13,10 +13,21 @@
                 <div class="col-12">
                     <div class="box">
                         <div class="container-1">
-                            <span class="icon"><i class="fa fa-search"></i></span>
-                            <input type="search" id="search" placeholder="Search..." />
+                            <form action="<? echo 'index.php?option=buscadorAlimentos'?>" method="POST">
+                                <span class="icon"><i class="fa fa-search"></i></span>
+                                <input type="search" id="search-alim" name='search-alim' placeholder="Search..." />
+                            </form>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="list-alim-found">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
                 </div>
             </div>
         </div>
