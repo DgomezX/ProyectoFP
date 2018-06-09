@@ -34,6 +34,17 @@
             </div>
         </div>
     </section>
+    <div id="ventanaAddAlim" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Agregar Alimento</h2>
+                <span class="close" onclick="cerrarModal('ventanaAddAlim')"><i class="far fa-times-circle"></i></span>
+            </div>
+            <div class="modal-body">
+
+            </div>
+        </div>
+    </div>
     <?php include 'componentes/commons/footer.php'; 	// footer ?>
 </body>
 </html>

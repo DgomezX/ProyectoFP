@@ -224,7 +224,7 @@ $(document).ready(function(){
                 }else{
                     var obj = $.parseJSON(data);
                     for(var i = 0; i < obj.length; i++){
-                        var item = '<li class="alim-found">'+i+' | '+obj[i].nombre+'</li>';
+                        var item = '<li class="alim-found">'+obj[i].nombre+'<i class="fas fa-plus choose-alim"></i></li>';
                         $("#listado-respuesta").append(item);
                     }
                 }
