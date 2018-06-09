@@ -204,7 +204,7 @@ $(document).ready(function(){
 
     //Buscador de alimentos
 
-    $('#search-alim1').on('keyup', function(event){
+    $('#form-alim-search').on('submit', function(event) {
         event.preventDefault();
 
         var consulta = $("#search-alim").val();
@@ -212,18 +212,28 @@ $(document).ready(function(){
         $.ajax({
             url: 'index.php?option=buscadorAlimentos',
             type: 'POST',
-            data: {'search': consulta}
-        }).done(function (response) {
-            if (response.estado == "OK"){
-                console.log(response);
+            typeData: 'json',
+            data: {'search': consulta},
+            success: function(data){
+                $("#listado-respuesta").empty();
+                console.log(data.length);
+                console.log(data);
+                if( data.length <= 2 ){
+                    var item = '<li class="no-found">No se encontraron resultados</li>';
+                    $("#listado-respuesta").html(item);
+                }else{
+                    var obj = $.parseJSON(data);
+                    for(var i = 0; i < obj.length; i++){
+                        var item = '<li class="alim-found">'+i+' | '+obj[i].nombre+'</li>';
+                        $("#listado-respuesta").append(item);
+                    }
+                }
+            },
+            error: function(e){
+                console.log(e.message);
             }
-            else{
-                alert(response.mensaje);
-            }
-        }).fail(function(jqXHR, textStatus, errorThrown){
-            alert("Se produjo un error: " + textStatus);
         })
-    })
+    });
 });
 
 

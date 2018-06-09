@@ -3,9 +3,9 @@ include 'componentes/buscadorAlimentos/model.php';
 $title = 'Buscador alimentos';
 $location = 'buscador_alimentos';
 
-if(isset($_POST['search-alim'])){
-    $alimento = $_POST['search-alim'];
+if(isset($_POST['search'])){
+    $alimento = $_POST['search'];
     $encontrados = modelBuscadorAlim::obtenAlimentos($alimento);
-    var_dump($encontrados); die();
+    echo json_encode($encontrados); die();
 }
 include 'componentes/buscadorAlimentos/buscador_alimentos_view.php';
