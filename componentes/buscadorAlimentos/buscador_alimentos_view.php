@@ -41,7 +41,18 @@
                 <span class="close" onclick="cerrarModal('ventanaAddAlim')"><i class="far fa-times-circle"></i></span>
             </div>
             <div class="modal-body">
+                <div class="row">
+                    <div class="col-6 imagen-alimento">
 
+                    </div>
+                    <div class="col-6">
+                        <h2 id="alim-nombre"></h2>
+                        <form action="">
+                            <input type="number" min="1" placeholder="Introduce...">
+                            <input type="submit" value="Agregar Alimento">
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
