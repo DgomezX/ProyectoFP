@@ -166,12 +166,15 @@ function calcularDatos(){
 }
 
 //funcion que muestra el modal para agregar el alimento seleccionado a la dieta
-function agregarComidaModal(nombre_alimento) {
+function agregarComidaModal(nombre_alimento, imagen) {
     var modal = document.getElementById('ventanaAddAlim');
     modal.style.display = "block";
     var nombre = nombre_alimento;
     var titulo = document.getElementById('alim-nombre');
     titulo.innerHTML = nombre;
+    var ruta_img = imagen;
+    var imgVista = document.getElementById('imagen-alimento');
+    imgVista.innerHTML = '<img src="'+ruta_img+'" alt="imagen de alimento">';
 }
 
 
@@ -233,13 +236,13 @@ $(document).ready(function(){
                 }else{
                     var obj = $.parseJSON(data);
                     for(var i = 0; i < obj.length; i++){
-                        var item = '<li class="alim-found">'+obj[i].nombre+'<i class="fas fa-plus choose-alim" onclick="agregarComidaModal(\''+obj[i].nombre+'\')"></i></li>';
+                        var item = '<li class="alim-found">'+obj[i].nombre+'<i class="fas fa-plus choose-alim" onclick="agregarComidaModal(\''+obj[i].nombre+'\',\''+obj[i].foto+'\')"></i></li>';
                         $("#listado-respuesta").append(item);
                     }
                 }
             },
             error: function(e){
-                console.log(e.message);
+                alert(e.message);
             }
         })
     });

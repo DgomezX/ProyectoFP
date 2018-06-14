@@ -43,7 +43,7 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="col-6 imagen-alimento">
-
+                        <div id="imagen-alimento"></div>
                     </div>
                     <div class="col-6">
                         <h2 id="alim-nombre"></h2>
