@@ -62,7 +62,18 @@ if(isset($_POST['add_alim'])){
     //Obtengo los hidratos para la cantidad de alimento seleccionada
     $hcTotal = ($cantidad * $hcAlim)/100;
 
-    $insert_alimento = modelBuscadorAlim::addAlimentoDieta($idDieta,$idAlim,$idComida,$cantidad,$calTotal,$proteTotal,$grasaTotal,$hcTotal);
+    //Obtengo los datos actuales de la dieta y le supo las cantidades del alimento que voy a agregar
+    $dietaActual = modelBuscadorAlim::obtenDieta($idDieta);
+
+    $caloriaSuma = $dietaActual['calorias'] + $calTotal;
+    $proteSuma = $dietaActual['proteinas'] + $proteTotal;
+    $grasaSuma = $dietaActual['grasas'] + $grasaTotal;
+    $hcSuma = $dietaActual['hidratos'] + $hcTotal;
+
+    // Inserto datos en la base en las tablas correspondientes
+    $insert_alimento = modelBuscadorAlim::addAlimentoDieta($idDieta,$idAlim,$idComida,$cantidad,$calTotal,$proteTotal,$grasaTotal,$hcTotal,$caloriaSuma,$proteSuma,$grasaSuma,$hcSuma);
+
+    //Redirijo la vista al editor de la dieta para ver el alimento agregado
     header("Location: index.php?option=editorDietas&id_dieta=".$idDieta);
 }
 

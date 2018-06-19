@@ -9,7 +9,7 @@ class modelBuscadorAlim{
         return $alimentos;
     }
 
-    public static function addAlimentoDieta($id_dieta,$id_alimento,$id_com,$gramos,$cal,$prote,$gras,$hc){
+    public static function addAlimentoDieta($id_dieta,$id_alimento,$id_com,$gramos,$cal,$prote,$gras,$hc,$calSum,$protSuma,$grasaSuma,$hcSuma){
         $db = new database();
         $db->beginTransaction();
         try {
@@ -26,10 +26,23 @@ class modelBuscadorAlim{
 
             );
             $db->query($sql1, $params1);
+            $sql2 = 'UPDATE dietas SET calorias = '.$calSum.',proteinas = '.$protSuma.',grasas = '.$grasaSuma.',hidratos = '.$hcSuma.' WHERE id = '.$id_dieta;
+            $db->query($sql2);
             $db->Commit();
         }catch (Exception $e){
             $db->Rollback();
             echo 'Ocurrio algún error: ',  $e->getMessage(), "\n";
         }
+    }
+
+    public static function obtenDieta($id_dieta){
+        $db = new database();
+        $sql = 'SELECT * FROM dietas WHERE id = :id_dieta';
+        $params = array(
+            ':id_dieta' => $id_dieta
+        );
+        $db->query($sql, $params);
+        $dieta = $db->cargaFila();
+        return $dieta;
     }
 }
