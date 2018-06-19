@@ -197,6 +197,16 @@ footer #aviso-legal a:hover{opacity: 0.6; color: #1EB250;}
 /* EDITOR DIETAS */
 
 #editor_dieta h1{text-align: center; font-size: 50px; color: #1EB250; font-family: "Roboto-Black", sans-serif;}
+
+#editor_dieta #cambiaNombreDieta{margin-top: 15px; margin-bottom: 15px;}
+#editor_dieta #cambiaNombreDieta p{text-align: center;}
+#editor_dieta #cambiaNombreDieta .inputNameD{width: 60%; height: 40px; margin-left: 15%; margin-bottom: 10px; padding: 10px; border-radius: 5px; border: 1px solid grey; background-color: rgba(255, 255, 255, 0.8);}
+#editor_dieta #cambiaNombreDieta .nameD-submit{width: 20%; height: 40px; margin-bottom: 10px; padding: 10px; border-radius: 5px; border: 1px solid grey; color: #ffffff; background-color: #1EB250;}
+
+#editor_dieta #aviso_completadaD .aviso-informe-completada{text-align: center; list-style: none; padding: 30px; color: #155724; background-color: #d4edda; border-color: #c3e6cb;}
+#editor_dieta #aviso_completadaD .aviso-informe-completada a{display: block;  width: 40%; margin: 5px auto; padding: 10px; background-color: #155724; color: #ffffff; text-decoration: none;}
+#editor_dieta #aviso_completadaD .aviso-informe-completada a:hover{opacity: 0.7}
+
 #editor_dieta #edit_diet_alim h3{font-size: 25px; color: #1EB250; margin: 15px 0;}
 #editor_dieta .warning_scroll{font-size: 12px; color: grey;}
 #editor_dieta #edit_diet_alim table{width: 100%;}

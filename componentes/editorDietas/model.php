@@ -34,4 +34,37 @@ class modelEditor{
         $datos = $db->cargaFila();
         return $datos;
     }
+
+    public static function deleteAlimento($id_dieta, $id,$calorias,$prote,$grasa,$hc){
+        $db = new database();
+        $db->beginTransaction();
+        try{
+            $sql1 = 'DELETE FROM dietas_rel_alimentos WHERE id_alim = :id AND id_diet = :id_dieta';
+            $params1 = array(
+                ':id'   => $id,
+                ':id_dieta' => $id_dieta
+            );
+            $db->query($sql1, $params1);
+            $sql2 = 'UPDATE dietas SET calorias = '.$calorias.',proteinas = '.$prote.',grasas = '.$grasa.',hidratos = '.$hc.' WHERE id = '.$id_dieta;
+            $db->query($sql2);
+            $db->Commit();
+        }catch (Exception $e){
+            $db->Rollback();
+            echo 'Ocurrio algún error: ',  $e->getMessage(), "\n";
+        }
+
+    }
+
+    public static function changeNameDieta($id,$nombre){
+        $db = new database();
+        $sql = 'UPDATE dietas SET nombre = :nombre_nuevo WHERE id = :id_dieta';
+        $params = array(
+            ':id_dieta'   => $id,
+            ':nombre_nuevo' => $nombre
+        );
+        $db->query($sql, $params);
+        $datos = $db->affectedRows();
+        return $datos;
+    }
+
 }

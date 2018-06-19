@@ -6,7 +6,42 @@
 <body id="<?php echo $location; ?>">
     <?php include 'componentes/commons/header.php'; 	// header ?>
     <?php include 'componentes/commons/menu_nav.php'; 	// menu navegacion ?>
+    <?php if(isset($erorNombre )){?>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>$erorNombre</h2>
+                    <a href="index.php?option=dietas">Volver al listado de dietas</a>
+                </div>
+            </div>
+        </div>
+    <?php }else{?>
     <h1>Dieta: <?php echo $dieta['nombre'];?></h1>
+    <section id="cambiaNombreDieta">
+        <div class="container">
+            <div class="row">
+                <p>Para cambiar el nombre de tu dieta introduce el nuevo nombre en el siguiente campo:</p>
+                <form action="<?php echo "index.php?option=editorDietas&id_dieta=".$_GET['id_dieta']; ?>" method="POST">
+                    <div class="col-12">
+                        <input class="inputNameD" type="text" name="inputNameD" placeholder="Introducir nombre" required>
+                        <input type="submit" class="nameD-submit" id="changeNameD" name="changeNameD" value="CambiarNombre">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <?php if(($rCalorias < 50)&&($rProteinas < 10)&&($rGrasas < 20)&&($rHidratos < 20)){?>
+        <section id="aviso_completadaD">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 aviso-informe-completada">
+                        <p>Con los alimentos actuales su dieta tiene unos valores optimos, le recomendamos no seguir añadiendo alimentos</p>
+                        <a href="index.php?option=dietas">Volver al listado de dietas</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <?php }?>
     <section id="edit_diet_alim">
         <div class="container">
             <div class="row">
@@ -24,6 +59,7 @@
                             <th>Proteinas</th>
                             <th>Grasas</th>
                             <th>Hidratos</th>
+                            <th>Eliminar alimento</th>
                             </thead>
                             <tbody>
                             <?php
@@ -35,6 +71,7 @@
                                     <td><?php echo $alimento['proteinas']?></td>
                                     <td><?php echo $alimento['grasa']?></td>
                                     <td><?php echo $alimento['hidratos']?></td>
+                                    <td><?php echo "<a href='index.php?option=editorDietas&id_dieta=".$_GET['id_dieta']."&alimento_idBorra=".$alimento['id_alim']."&calorias=".$alimento['calorias']."&proteinas=".$alimento['proteinas']."&grasas=".$alimento['grasa']."&hidratos=".$alimento['hidratos']."'><i class=\"fas fa-trash-alt\"></i></a>"?></td>
                                 </tr>
                             <?}
                             ?>
@@ -96,6 +133,7 @@
             </div>
         </div>
     </section>
+    <?php } ?>
     <?php include 'componentes/commons/footer.php'; 	// footer ?>
 </body>
 </html>

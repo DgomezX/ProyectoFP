@@ -2,6 +2,38 @@
 include 'componentes/editorDietas/model.php';
 $title = 'Edicion dieta';
 $location = 'editor_dieta';
+if(isset($_GET['alimento_idBorra'])){
+    $id_dieta = $_GET['id_dieta'];
+    $id_alimento = $_GET['alimento_idBorra'];
+    $calorias = $_GET['calorias'];
+    $proteinas = $_GET['proteinas'];
+    $grasas = $_GET['grasas'];
+    $hidratos = $_GET['hidratos'];
+
+    //Resto las cantidades del alimento a borrar de las cantidades de la dieta actual
+    $dietaActual = modelEditor::obtenDieta($id_dieta);
+    $caloriasF = $dietaActual['calorias'] - $calorias;
+    $proteinasF = $dietaActual['proteinas'] - $proteinas;
+    $grasasF = $dietaActual['grasas'] - $grasas;
+    $hidratosF = $dietaActual['hidratos'] - $hidratos;
+
+    $borrado = modelEditor::deleteAlimento($id_dieta,$id_alimento,$caloriasF,$proteinasF,$grasasF,$hidratosF);
+
+    //Redirijo la vista para que el usuario al recargar no vuelva a ejecutar la funcion de borrar con la misma url el alimento ya borrado
+    header("Location: index.php?option=editorDietas&id_dieta=".$id_dieta);
+}
+
+if(isset($_POST['changeNameD'])){
+    $id_dieta = $_GET['id_dieta'];
+    $nuevoNombre = $_POST['inputNameD'];
+    $cambioN = modelEditor::changeNameDieta($id_dieta,$nuevoNombre);
+
+    if($cambioN > 0){
+        header("Location: index.php?option=editorDietas&id_dieta=".$id_dieta);
+    }else{
+        $erorNombre = "ocurrio algun error al cambiar el nombre";
+    }
+}
 
 if(isset($_GET['id_dieta'])){
     $id_dieta = $_GET['id_dieta'];
@@ -64,5 +96,7 @@ if(isset($_GET['id_dieta'])){
     $rGrasas = $oGrasas - $tGrasas;
     $rHidratos = $oHidratos - $tHidratos;
 }
+
+
 
 include 'componentes/editorDietas/editor_view.php';
