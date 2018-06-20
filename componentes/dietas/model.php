@@ -37,10 +37,14 @@ class modelDietas{
 
     public static function addDieta($nombre,$n_comidas, $id_usr){
         $db = new database();
-        $sql = 'INSERT INTO dietas VALUES(NULL,:nombre, :n_comidas, :id_usr)';
+        $sql = 'INSERT INTO dietas VALUES(NULL,:nombre, :n_comidas,:calorias,:proteinas,:grasas,:hidratos, :id_usr)';
         $params = array(
             ':nombre'   => $nombre,
             ':n_comidas' =>$n_comidas,
+            ':calorias' => 0,
+            ':proteinas' => 0,
+            ':grasas'   => 0,
+            ':hidratos' => 0,
             ':id_usr'     => $id_usr
         );
         $db->query($sql, $params);
